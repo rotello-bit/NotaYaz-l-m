@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>GTİ</title>
+</head>
+<body>
+
+<nav id="header-web">
+    <div class="logo1">
+        <a href=""><img src="img/logo.png" alt="logo"></a>
+    </div>
+    <div class="navbar-opt">
+        <ul>
+            <li><a href="default.asp">Kurum Profili</a></li>
+            <li class="dropdown">
+                <a  href="#">Projeler</a>
+                <div class="dropdown-menu">
+                    <div class="dropdown-item"><a href="#">Alt menü</a></div>
+                    <div class="dropdown-item"><a href="#">Alt menü</a></div>
+                    <div class="dropdown-item"><a href="#">Alt menü</a></div>
+                    <div class="dropdown-item"><a href="#">Alt menü</a></div>
+                  </div>
+                </li>
+            <li><a href="contact.asp">Kalite</a></li>
+            <li><a href="about.asp">Hizmetler</a></li>
+            <li><a href="about.asp">İletişim</a></li>
+        </ul>
+    </div>
+    <div class="logo2">
+        <a href=""><img src="img/logo2.png" alt="logo2"></a>
+    </div>
+</nav>
+<nav id="header-mobile">
+    <div class="navbar">
+        <div class="container nav-container">
+            
+          <div class="mobile-logo2">
+            <a href=""><img src="img/logo2.png" alt="logo2"></a>
+          </div>
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div> 
+          <div class="menu-items">
+            <img src="img/logo.png" alt="logo1">
+            <ul class="dropdown-list">
+                <li><a href="#">Kurum Profili</a></li>
+                <li class="dropdown-mobile">
+                    <a  href="#">Projeler</a>
+                    <div class="dropdown-menu-mobile">
+                        <div class="dropdown-item-mobile"><a href="#">Alt menü</a></div>
+                        <div class="dropdown-item-mobile"><a href="#">Alt menü</a></div>
+                        <div class="dropdown-item-mobile"><a href="#">Alt menü</a></div>
+                        <div class="dropdown-item-mobile"><a href="#">Alt menü</a></div>
+                      </div>
+                    </li>
+                <li><a href="#">Kalite</a></li>
+                <li><a href="#">Hizmetler</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>    
+</nav>
+
+<div class="hero">
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+    </div>
+    <div class="hero-main">
+        <div class="news-active" style="text-align: center;">
+            <hr>
+            <h4>CORE FEATURES</h4>
+            <hr>
+            <H2>ADDITIONAL FEATURES</H2>
+            <button>Carefully throught <b>MORE SETTINGS</b></button>
+        </div>
+        <div class="news-passive" style="text-align: center;">
+            <hr>
+            <h4>JAVASCRİPT IS GREAT</h4>
+            <hr>
+            <H2>HELLO WORLD</H2>
+            <button>Learn more <b>Javascript</b></button>
+        </div>
+    </div>
+    <button class="search-button" onclick="searchButton();"><img src="img/search-3-24.png" alt=""></button>
+    <button class="language-button">En</button>
+    <button class="next-slider" onclick="nextSlider();"><img src="img/right.png" alt=""></button>
+    <button class="prev-slider" onclick="prevSlider();"><img src="img/left.png" alt=""></button>
+</div>
+
+<footer class="active" id="footer">
+    <div class="custom-buttons">
+    
+        <button onclick="infoShow();" class="button-info">Custom Info</button>
+        <button onclick="newsShow();"  class="button-news">Custom News</button>
+
+    </div>
+    
+    <div id="info-tab" class="custom-info wt-custom">
+        <h5><span>WT</span> Custom Info</h5> 
+    
+    </div>
+    
+    <div id="news-tab" class="custom-news wt-custom">
+        <h5><span>WT</span> Custom News</h5> 
+    </div>
+
+    <div class="info-detay" style="display: flex;">
+        <h5 class="news-active">
+            <span>Established by TOBB in 2005</span>
+             is undertaking the modernization of border gates with the build</h5>    
+        <h5 class="news-passive">
+            <span>Phone</span>
+               +90 544 956 08 24</h5>    
+    </div>
+
+    <div class="news-detay" style="color: azure;">
+        <h5 class="news-active">
+            <span>Established by TOBB in 2005</span>
+             is undertaking the modernization of border gates with the build</h5>   
+        <h5 class="news-passive">
+            <span>Established by TOBB in 2005</span>
+             is  modernization of border gates with the build</h5>   
+    </div>
+
+    <div class="info-slide-buttons">
+        <button class="left-arrow" onclick="prevNews();"><img src="img/left.png" alt=""></button>
+        <button class="right-arrow" onclick="nextNews();"><img src="img/right.png" alt=""></button>
+    </div>
+</footer>
+    
+<script src="./js/main.js"></script>
+
+</body>
+</html>
